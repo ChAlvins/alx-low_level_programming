@@ -2,12 +2,12 @@
 
 /**
  * _isupper - checking for uppercase character
- * @c: character to be printed
+ * @c: character to be checked
  * Return: 1 if uppercase, otherwise 0
  */
 int _isupper(int c);
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
@@ -15,4 +15,5 @@ int _isupper(int c);
 	{
 		return (0);
 	}
+	_putchar('\n');
 }
