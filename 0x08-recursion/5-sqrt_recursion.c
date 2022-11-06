@@ -25,7 +25,6 @@ int check_sqrt_recursion(int i, int j)
 {
 	if (i * i == j)
 		return (i);
-	if (i * i > j)
-		return (-1);
+
 	return (check_sqrt_recursion(i + 1, j));
 }
