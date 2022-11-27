@@ -18,6 +18,7 @@ int main(void)
 		}
 		else if (i == 1)
 		{
+			printf(", ");
 			printf("%ld", k);
 		}
 		else
