@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	char buf[1024];
 	mode_t perm;
 
-	perm = 00400 | 00200 | 00040 | 00020 | 0004;
+	perm = 00600 | 00060 | 0004;
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	fd_from = open(argv[1], O_RDONLY);
